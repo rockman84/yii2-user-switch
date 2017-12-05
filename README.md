@@ -2,7 +2,7 @@
 package for quick easy login when do development
 ## Install Package
 ```
-php composer.phar require sky\yii2-user-switch "*"
+php composer.phar require sky/yii2-user-switch "*"
 ```
 or add in composer.json
 ```
