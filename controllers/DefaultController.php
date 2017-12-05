@@ -9,6 +9,11 @@ class DefaultController extends \yii\web\Controller
 {
     public $layout = 'main';
     
+    public function beforeAction($action)
+    {
+        return parent::beforeAction($action);
+    }
+
     public function actionIndex()
     {
         $userClass = Yii::$app->user->identityClass;

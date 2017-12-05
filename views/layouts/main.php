@@ -7,9 +7,13 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
-use app\assets\AppAsset;
+use yii\web\YiiAsset;
+use yii\bootstrap\BootstrapAsset;
+use yii\helpers\Url;
 
-AppAsset::register($this);
+YiiAsset::register($this);
+BootstrapAsset::register($this);
+
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -25,11 +29,11 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<div class="wrap">
+<div class="wrap" style="margin-top: 80px;">
     <?php
     NavBar::begin([
         'brandLabel' => 'SkySoft',
-        'brandUrl' => Yii::$app->homeUrl,
+        'brandUrl' => Url::to([Yii::$app->controller->module->id]),
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
