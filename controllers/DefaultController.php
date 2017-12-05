@@ -7,6 +7,8 @@ use yii\base\DynamicModel;
 
 class DefaultController extends \yii\web\Controller
 {
+    public $layout = 'main';
+    
     public function actionIndex()
     {
         $userClass = Yii::$app->user->identityClass;
