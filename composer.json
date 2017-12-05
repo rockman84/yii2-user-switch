@@ -1,0 +1,20 @@
+{
+	"name": "sky/yii2-user-switch",
+	"description": "Sky User Switch Quick Login User",
+	"homepage": "https://github.com/rockman84",
+	"type": "library",
+	"license": "Apache",
+	"authors": [
+		{
+			"name": "Hansen Wong",
+			"email": "huanghanzen@gmail.com",
+			"role": "Developer"
+		}
+	],
+	"require": {
+            "yiisoft/yii2": ">=2.0.0"
+	},
+	"autoload": {
+		"psr-4": {"sky\\userswitch\\": "/"}
+	}
+}
