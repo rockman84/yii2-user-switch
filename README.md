@@ -6,7 +6,7 @@ php composer.phar require sky\yii2-user-switch "*"
 ```
 or add in composer.json
 ```
-"sky\yii2-user-switch" : "*"
+"sky/yii2-user-switch" : "*"
 ```
 ## How To Use
 add at config file config/web.php or common/config/main.php
