@@ -6,9 +6,7 @@ use Yii;
 use yii\base\DynamicModel;
 
 class DefaultController extends \yii\web\Controller
-{
-    public $layout = 'main';
-    
+{    
     public function beforeAction($action)
     {
         return parent::beforeAction($action);
